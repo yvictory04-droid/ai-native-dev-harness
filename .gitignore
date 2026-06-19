@@ -3,6 +3,9 @@
 .env.*
 *.pem
 *.key
+*.docx
+*.pptx
+*.xlsx
 node_modules/
 dist/
 build/
