@@ -1,0 +1,17 @@
+{
+  "name": "agentic-product-engineering-harness",
+  "version": "1.0.0",
+  "description": "A model-agnostic workflow harness for AI-native product engineering.",
+  "private": false,
+  "keywords": [
+    "ai-agents",
+    "coding-agents",
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "cursor",
+    "prd",
+    "agentic-engineering"
+  ],
+  "license": "MIT"
+}

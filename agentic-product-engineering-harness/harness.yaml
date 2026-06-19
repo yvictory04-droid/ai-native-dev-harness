@@ -1,0 +1,46 @@
+name: agentic-product-engineering-harness
+version: 1.0.0
+language: bilingual
+purpose: >
+  A model-agnostic operating harness for AI product engineering.
+  It guides AI agents through context, PRD, review, UI/FRD,
+  implementation planning, test planning, stepwise building, code review,
+  and acceptance.
+
+entrypoints:
+  claude_code: CLAUDE.md
+  codex: AGENTS.md
+  gemini_cli: GEMINI.md
+  cursor: .cursor/rules/agentic-product-engineering.mdc
+  claude_skills: skills/*/SKILL.md
+
+workflow:
+  - context
+  - prd
+  - prd_review
+  - ui_frd
+  - implementation_plan
+  - test_plan
+  - stepwise_build
+  - code_review
+  - acceptance_gate
+
+gates:
+  no_context_no_prd: true
+  no_prd_no_implementation: true
+  no_plan_no_code: true
+  no_tests_no_merge: true
+  no_review_no_release: true
+
+model_requirements:
+  minimum:
+    - follows long instructions
+    - reads project files
+    - writes structured markdown
+  recommended:
+    - tool use
+    - code editing
+    - shell execution
+    - test execution
+    - large context window
+    - strong reasoning
