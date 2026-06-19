@@ -38,16 +38,11 @@ Context → PRD → Review → UI/FRD → Implementation Plan → Test Plan → 
 
 本仓库是一套面向 AI Coding Agent 的工作流 Harness。
 
-它不是 Prompt 摘抄。  
-不是技巧合集。  
-也不是“一句话生成完整系统”的幻想。
-
 它的核心目标是：
 
 ```txt
 先理解上下文 → 再定义产品 → 再拆实现 → 再设计测试 → 再分步写代码 → 再审查验收
 ```
-
 ---
 
 ## 02 · Core Thesis / 核心观点
